@@ -3,6 +3,7 @@ from rest_framework import viewsets
 from rest_framework.permissions import AllowAny
 from .models import Category, Product
 from .serializers import CategorySerializer, ProductSerializer
+from rest_framework.request import Request # to fix request.query_params warnings
 
 # Create your views here.
 class CategoryViewSet(viewsets.ModelViewSet):
@@ -16,6 +17,8 @@ class ProductViewSet(viewsets.ModelViewSet):
     serializer_class = ProductSerializer
     permission_classes = [AllowAny]  # TODO: later: IsAuthenticatedOrReadOnly
 
+    request: Request #to fix request.query_params warnings
+
     # Enable search & ordering (DRF global filter backends use these)
     search_fields = ["name", "slug", "sku", "description"]
     ordering_fields = ["name", "price", "created_at"]
@@ -24,7 +27,7 @@ class ProductViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         queryset = super().get_queryset()
 
-        # Filtering by query params #TODO Fix warnings
+        # Filtering by query params
         category_id = self.request.query_params.get("category_id")
         min_price = self.request.query_params.get("min_price")
         max_price = self.request.query_params.get("max_price")

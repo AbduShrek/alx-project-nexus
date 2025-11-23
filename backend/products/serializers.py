@@ -3,7 +3,7 @@ from .models import Category, Product
 
 
 class CategorySerializer(serializers.ModelSerializer):
-    class meta:
+    class Meta:
         model = Category
         fields = [
             "id",
@@ -29,7 +29,7 @@ class ProductSerializer(serializers.ModelSerializer):
         write_only=True,
     )
 
-    class meta:
+    class Meta:
         model = Product
         fields = [
             "id",

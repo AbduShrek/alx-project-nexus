@@ -19,7 +19,7 @@ from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 from products.views import CategoryViewSet, ProductViewSet
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView #JWT Auth
-
+from accounts.views import RegisterView
 
 router = DefaultRouter()
 router.register(r"categories", CategoryViewSet, basename="category")
@@ -28,6 +28,8 @@ router.register(r"products", ProductViewSet, basename="product")
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("api/", include(router.urls)),
+    # User registration API
+    path("api/auth/register/", RegisterView.as_view(), name="auth_register"),
 
     # JWT endpoints
     path("api/auth/login/", TokenObtainPairView.as_view(), name="token_obtain_pair"),

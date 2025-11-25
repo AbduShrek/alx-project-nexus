@@ -33,12 +33,12 @@ router.register(r"products", ProductViewSet, basename="product")
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="E-Commerce API",
+        title="Hilya E-Commerce API",
         default_version="v1",
         description="Backend API for the ALX Project Nexus E-Commerce catalog.",
-        terms_of_service="https://www.google.com/policies/terms/",  # optional
-        contact=openapi.Contact(email="support@example.com"),        # optional
-        license=openapi.License(name="MIT License"),                 # optional
+        terms_of_service="https://www.google.com/policies/terms/",
+        contact=openapi.Contact(email="abdu.shrek.at@gmail.com"),
+        license=openapi.License(name="MIT License"),
     ),
     public=True,
     permission_classes=[permissions.AllowAny],

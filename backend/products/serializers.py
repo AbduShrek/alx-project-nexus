@@ -22,7 +22,7 @@ class ProductSerializer(serializers.ModelSerializer):
     # Read-only nested category representation
     category = CategorySerializer(read_only=True)
 
-    # Write-only FK for create/update
+    # Write-only category FK for create/update
     category_id = serializers.PrimaryKeyRelatedField(
         queryset=Category.objects.filter(is_active=True),
         source="category",  # bind to the `category` FK field

@@ -104,6 +104,6 @@ python manage.py runserver
 ### 🎉 Done!
   Open the project in your browser:
 
-  http://127.0.0.1:8000
+  http://127.0.0.1:8000/api/
 
   APIs will be available under /api/.

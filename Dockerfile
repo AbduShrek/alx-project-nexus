@@ -28,5 +28,5 @@ RUN python manage.py collectstatic --noinput
 # Expose port (Fly will route to this)
 EXPOSE 8080
 
-# Start Gunicorn - note: backend.backend.wsgi is your WSGI module
-CMD ["gunicorn", "backend.backend.wsgi:application", "--bind", "0.0.0.0:8080"]
+# Start Gunicorn - note: backend.wsgi is your WSGI module
+CMD ["gunicorn", "backend.wsgi:application", "--bind", "0.0.0.0:8080"]

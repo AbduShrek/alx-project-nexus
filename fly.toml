@@ -8,8 +8,6 @@ primary_region = 'fra'
 
 [build]
 
-[deploy]
-  release_command = 'cd backend && python manage.py migrate --noinput'
 
 [env]
   PORT = '8080'

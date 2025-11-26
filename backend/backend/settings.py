@@ -34,6 +34,11 @@ ALLOWED_HOSTS = os.environ.get( #Getting ready for production
         "127.0.0.1,localhost"
     ).split(",")
 
+#Let Django trust our fly domain...
+CSRF_TRUSTED_ORIGINS = [
+    "https://alx-project-nexus-hilya.fly.dev",
+]
+
 
 # Application definition
 

@@ -6,7 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 # Set work directory
-WORKDIR /app
+WORKDIR /app/backend
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
@@ -17,9 +17,10 @@ RUN apt-get update && apt-get install -y \
 # Copy project files
 COPY . /app/
 
-# Install dependencies
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+# Copy dependency file and install dependencies
+COPY requirements.txt /app/requirements.txt
+RUN pip install --upgrade pip \
+    && pip install -r /app/requirements.txt
 
 # Collect static files (will use STATIC_ROOT)
 RUN python backend/manage.py collectstatic --noinput

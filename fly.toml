@@ -26,5 +26,5 @@ primary_region = 'fra'
   cpus = 1
 
 [[statics]]
-  guest_path = '/code/staticfiles'
+  guest_path = '/app/backend/staticfiles'
   url_prefix = '/static/'

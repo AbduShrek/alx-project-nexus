@@ -66,7 +66,7 @@ If you want to run the backend on your computer after cloning the repo, here are
 
 ### 1️⃣ Clone the Repo
 ```bash
-git clone https://github.com/<your-username>/alx-project-nexus.git
+git clone https://github.com/AbduShrek/alx-project-nexus.git
 cd alx-project-nexus
 ```
 ### 2️⃣ Create a Virtual Environment

@@ -22,6 +22,8 @@ Simple, but real.
 
 This project is deployed on **Fly.io** using Docker, Gunicorn, and a managed PostgreSQL database.
 
+You can access the fly.io deployed project here https://alx-project-nexus-hilya.fly.dev/api/docs/
+
 ### **Production Setup Includes**
 - Dockerized Django application (`Dockerfile`)
 - Gunicorn as the production WSGI server

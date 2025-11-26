@@ -23,7 +23,7 @@ RUN pip install --upgrade pip \
     && pip install -r /app/requirements.txt
 
 # Collect static files (will use STATIC_ROOT)
-RUN python backend/manage.py collectstatic --noinput
+RUN python manage.py collectstatic --noinput
 
 # Expose port (Fly will route to this)
 EXPOSE 8080

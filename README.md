@@ -99,7 +99,7 @@ DATABASE_URL=sqlite:///db.sqlite3
   (You can use SQLite locally. No need for PostgreSQL.)
 ### 6️⃣ Run Migrations
 ```bash
-python manage.py migrate
+python backend/manage.py migrate
 ```
 ### 7️⃣ Create a Superuser (optional)
 ```bash

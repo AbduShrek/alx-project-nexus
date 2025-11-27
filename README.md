@@ -57,9 +57,12 @@ I still have a lot to learn, but I’m much better than when I started.
 - JWT errors
 - Docker “works on my machine” lies
 - Deployment mistakes
-- Tiny errors that break everything 😅
+- Tiny errors that break everything
 
-But after breaking things many times, everything started to click.
+
+### But after breaking things many times, everything started to click.
+
+
 ---
 
 ## 🏃‍♂️ How to Run This Project Locally (Tested on Win 11 only)

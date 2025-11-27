@@ -90,12 +90,8 @@ venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-### 5️⃣ Create a .env File
-```ini
-SECRET_KEY="Generate a random String very long, very complicated"
-DEBUG=True
-DATABASE_URL=sqlite:///db.sqlite3
-```
+### 5️⃣ Add the .env and replace the backend/settings.py file
+# TODO
   (You can use SQLite locally. No need for PostgreSQL.)
 ### 6️⃣ Run Migrations
 ```bash

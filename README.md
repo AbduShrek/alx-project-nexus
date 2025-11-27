@@ -71,6 +71,8 @@ If you want to run the backend on your computer after cloning the repo, here are
   
   Python 3.14.0 Download link: https://www.python.org/ftp/python/3.14.0/python-3.14.0-amd64.exe
 
+### Run all these commands in CMD, not Powershell
+
 ### 1️⃣ Clone the Repo
 ```bash
 git clone https://github.com/AbduShrek/alx-project-nexus.git

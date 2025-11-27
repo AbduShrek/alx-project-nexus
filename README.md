@@ -103,12 +103,12 @@ python backend/manage.py migrate
 ```
 ### 7️⃣ Create a Superuser (optional)
 ```bash
-python manage.py createsuperuser
+python backend/manage.py createsuperuser
 ```
   Then follow the instructions, and you will be able to sign in as an admin
 ### 8️⃣ Start the Server
 ```bash
-python manage.py runserver
+python backend/manage.py runserver
 ```
 ### 🎉 Done!
   Open the project in your browser:

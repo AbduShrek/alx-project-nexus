@@ -91,8 +91,21 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 ### 5️⃣ Add the .env and replace the backend/settings.py file
-# TODO
-  (You can use SQLite locally. No need for PostgreSQL.)
+  
+* Replace backend/backend/settings.py with this file [Download here](https://github.com/user-attachments/files/23789566/settings.py)
+  
+* Then, create the .env file with this command:
+```bash
+(
+echo SECRET_KEY="Generate a random String very long, very complicated"
+echo DEBUG=True
+echo DATABASE_URL=sqlite:///db.sqlite3
+) > .env
+```
+  
+* (You can use SQLite locally. No need for PostgreSQL.)
+
+
 ### 6️⃣ Run Migrations
 ```bash
 python backend/manage.py migrate

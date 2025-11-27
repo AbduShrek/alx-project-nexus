@@ -66,6 +66,10 @@ But after breaking things many times, everything started to click.
 
 If you want to run the backend on your computer after cloning the repo, here are the simple steps:
 
+### Step 0: install git & Python 3.14.0
+  Git Download link: https://github.com/git-for-windows/git/releases/download/v2.52.0.windows.1/Git-2.52.0-64-bit.exe
+  Python 3.14.0 Download link: https://www.python.org/ftp/python/3.14.0/python-3.14.0-amd64.exe
+
 ### 1️⃣ Clone the Repo
 ```bash
 git clone https://github.com/AbduShrek/alx-project-nexus.git
